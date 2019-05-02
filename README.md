@@ -18,14 +18,32 @@
 <p>From the command-line, clone the repository where you want it.</br>
 </br>
 
-git clone https://github.com/hkn34/WOWYCO.git</br>
-cd WOWYCO</p>
+`git clone https://github.com/hkn34/WOWYCO.git`</br>
+`cd WOWYCO`</p>
+
+**Automated**
+
+<p>If you have bundler installed (gem install bundler), from inside the base repository directory, run:</p>
+
+`bundle install` # Install 'rake' if not already installed</br>
+`rake`           # Link the executable in your path ('/usr/local/bin')
+
+<p>To uninstall, run `rake uninstall`</p>
+
+**Manual**
+
+<p>If you aren't using bundler or rake, you can manually link executable. From inside the base repository directory, run:</p>
+
+`ln -s $PWD/bin/WOWYCO /usr/local/bin/WOWYCO`
+
+<p>To uninstall, run `rm /usr/local/bin/WOWYCO</p>`
+
 
 ## Usage
 
 <p>To use WOWYCO:</br>
 </br>
-WOWYCO # Run in terminal</br>
+`WOWYCO` # Run in Command-line</br>
 </br>
 Enter in the corresponding times, when prompted, in the format of (0:00[am/pm] or 00:00).</p>
 
